@@ -1,0 +1,22 @@
+### Create Person
+POST http://localhost:8080/people
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "jdoe@example.com",
+  "password": "snowball123"
+}
+
+### Find person
+GET http://localhost:8080/people/a66948b2-be79-4b72-8f25-6328f28f583c
+
+### Change Password
+PATCH http://localhost:8080/people/a66948b2-be79-4b72-8f25-6328f28f583c
+Content-Type: application/json
+
+{
+  "oldPassword": "snowball123",
+  "newPassword": "snowball1234"
+}
